@@ -1,0 +1,26 @@
+#+title: Todo
+
+* DONE Phase 0: Create a Dummy Worker Program
+** Should be able to control when it crashes and when it doesn't
+
+* TODO Phase 1: Persistent Child
+** Program takes commands and args as input
+** Program must launch child
+** Program blocks and waits while the child process runs
+** If child exits successfully, the program also exits
+** If the child fails, the program tries again
+
+* TODO Phase 2: Black Box
+** Program catches all outputs from child
+** Program places all the output in a specific log file with time stamps
+
+* TODO Phase 3: Circuit Breaker
+** Program must detect if child is in a crash loop
+** If child is in crash loop, restart delays should increase exponentially
+
+* TODO Phase 4: Puppet Master
+** Program must respond to User signals (kill)
+** Must properly handle memory when receiving signal
+
+* TODO Phase 5: Dynamic Configuration
+** Takes user input from files instead of hardcoded values
