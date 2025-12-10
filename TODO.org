@@ -3,14 +3,14 @@
 * DONE Phase 0: Create a Dummy Worker Program
 ** Should be able to control when it crashes and when it doesn't
 
-* TODO Phase 1: Persistent Child
+* DONE Phase 1: Persistent Child
 ** Program takes commands and args as input
 ** Program must launch child
 ** Program blocks and waits while the child process runs
 ** If child exits successfully, the program also exits
 ** If the child fails, the program tries again
 
-* TODO Phase 2: Black Box
+* DONE Phase 2: Black Box
 ** Program catches all outputs from child
 ** Program places all the output in a specific log file with time stamps
 

@@ -1,0 +1,250 @@
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+Child exited successfully
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % cat log.txt 
+***09-12-2025 23:05:59*** [INFO]   Call successful
+(       B        
+-K      B
+,
+      p@@
+
+*
+(       B 
+        @%                                                                                       
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+Child exited successfully
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % cat log.txt 
+***12-09-2025 23:06:36*** [INFO]   Call successful
+        B        
+ HH-K   B
+×o,
+      p
+
+
+*
+(       B 
+        @%                                                                                       
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+Child exited successfully
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % cat log.txt 
+***12-09-2025 23:08:39*** [INFO]   Call successful
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main 1
+Attempt 1 at running process
+Attempt 2 at running process
+Attempt 3 at running process
+Attempt 4 at running process
+Attempt 5 at running process
+Attempt 6 at running process
+Attempt 7 at running process
+Attempt 8 at running process
+Attempt 9 at running process
+Attempt 10 at running process
+Initilzing child failed. Exiting...
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % cat log
+cat: log: No such file or directory
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % cat log.txt 
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % cat log.txt
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+Child exited successfully
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main 1
+Attempt 1 at running process
+Attempt 2 at running process
+Attempt 3 at running process
+Attempt 4 at running process
+Attempt 5 at running process
+Attempt 6 at running process
+Attempt 7 at running process
+Attempt 8 at running process
+Attempt 9 at running process
+Attempt 10 at running process
+Initilzing child failed. Exiting...
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % cat log.txt 
+***12-09-2025 23:10:35*** [ERROR]   
+: Undefined error: 0
+***12-09-2025 23:10:35*** [ERROR]   
+: Undefined error: 0
+***12-09-2025 23:10:35*** [ERROR]   
+: Undefined error: 0
+***12-09-2025 23:10:35*** [ERROR]   
+: Undefined error: 0
+***12-09-2025 23:10:35*** [ERROR]   
+: Undefined error: 0
+***12-09-2025 23:10:35*** [ERROR]   
+: Undefined error: 0
+***12-09-2025 23:10:35*** [ERROR]   
+: Undefined error: 0
+***12-09-2025 23:10:35*** [ERROR]   
+: Undefined error: 0
+***12-09-2025 23:10:35*** [ERROR]   
+: Undefined error: 0
+***12-09-2025 23:10:35*** [ERROR]   
+: Undefined error: 0
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+Child exited successfully
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % cat log.txt 
+***12-09-2025 23:12:43*** [INFO]   Call successful
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main 1 
+Attempt 1 at running process
+Attempt 2 at running process
+Attempt 3 at running process
+Attempt 4 at running process
+Attempt 5 at running process
+Attempt 6 at running process
+Attempt 7 at running process
+Attempt 8 at running process
+Attempt 9 at running process
+Attempt 10 at running process
+Initilzing child failed. Exiting...
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % cat log.txt 
+***12-09-2025 23:12:52*** [ERROR]  a!k
+***12-09-2025 23:12:52*** [ERROR]  a!k
+***12-09-2025 23:12:52*** [ERROR]  a!k
+***12-09-2025 23:12:52*** [ERROR]  a!k
+***12-09-2025 23:12:52*** [ERROR]  a!k
+***12-09-2025 23:12:52*** [ERROR]  a!k
+***12-09-2025 23:12:52*** [ERROR]  a!k
+***12-09-2025 23:12:52*** [ERROR]  a!k
+***12-09-2025 23:12:52*** [ERROR]  a!k
+***12-09-2025 23:12:52*** [ERROR]  a!k
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+(
+Child exited successfully
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % cat log.txt 
+***12-09-2025 23:17:14*** [INFO]   Call successful
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main     
+Attempt 1 at running process
+
+Child exited successfully
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+
+
+Child exited successfully
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main 1
+Attempt 1 at running process
+C
+C
+Attempt 2 at running process
+C
+C
+Attempt 3 at running process
+C
+C
+Attempt 4 at running process
+C
+C
+Attempt 5 at running process
+C
+C
+Attempt 6 at running process
+C
+C
+Attempt 7 at running process
+C
+C
+Attempt 8 at running process
+C
+C
+Attempt 9 at running process
+C
+C
+Attempt 10 at running process
+C
+C
+Initilzing child failed. Exiting...
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % cat log
+cat: log: No such file or directory
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % cat log.txt 
+***12-09-2025 23:17:32*** [ERROR]  !;m'
+                                       Call failed with code -1. Try invoking without any argumen
+ts
+***12-09-2025 23:17:32*** [ERROR]  !;m'
+                                       Call failed with code -1. Try invoking without any argumen
+ts
+***12-09-2025 23:17:32*** [ERROR]  !;m'
+                                       Call failed with code -1. Try invoking without any argumen
+ts
+***12-09-2025 23:17:32*** [ERROR]  !;m'
+                                       Call failed with code -1. Try invoking without any argumen
+ts
+***12-09-2025 23:17:32*** [ERROR]  !;m'
+                                       Call failed with code -1. Try invoking without any argumen
+ts
+***12-09-2025 23:17:32*** [ERROR]  !;m'
+                                       Call failed with code -1. Try invoking without any argumen
+ts
+***12-09-2025 23:17:32*** [ERROR]  !;m'
+                                       Call failed with code -1. Try invoking without any argumen
+ts
+***12-09-2025 23:17:32*** [ERROR]  !;m'
+                                       Call failed with code -1. Try invoking without any argumen
+ts
+***12-09-2025 23:17:32*** [ERROR]  !;m'
+                                       Call failed with code -1. Try invoking without any argumen
+ts
+***12-09-2025 23:17:32*** [ERROR]  !;m'
+                                       Call failed with code -1. Try invoking without any argumen
+ts
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+Child exited successfully
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main 1
+Attempt 1 at running process
+Attempt 2 at running process
+Attempt 3 at running process
+Attempt 4 at running process
+Attempt 5 at running process
+Attempt 6 at running process
+Attempt 7 at running process
+Attempt 8 at running process
+Attempt 9 at running process
+Attempt 10 at running process
+Initilzing child failed. Exiting...
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % cat log.txt 
+***12-09-2025 23:19:11*** [ERROR]  !Ro?
+***12-09-2025 23:19:11*** [ERROR]  !Ro?
+***12-09-2025 23:19:11*** [ERROR]  !Ro?
+***12-09-2025 23:19:11*** [ERROR]  !Ro?
+***12-09-2025 23:19:11*** [ERROR]  !Ro?
+***12-09-2025 23:19:11*** [ERROR]  !Ro?
+***12-09-2025 23:19:11*** [ERROR]  !Ro?
+***12-09-2025 23:19:11*** [ERROR]  !Ro?
+***12-09-2025 23:19:11*** [ERROR]  !Ro?
+***12-09-2025 23:19:11*** [ERROR]  !Ro?
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+Child exited successfully
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % cat log.txt 
+***12-09-2025 23:19:51*** [INFO]   Call successful
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+Child exited successfully
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main 1
+Attempt 1 at running process
+Attempt 2 at running process
+Attempt 3 at running process
+Attempt 4 at running process
+Attempt 5 at running process
+Attempt 6 at running process
+Attempt 7 at running process
+Attempt 8 at running process
+Attempt 9 at running process
+Attempt 10 at running process
+Initilzing child failed. Exiting...
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % cat log.txt 
+***12-09-2025 23:20:58*** [ERROR]  (њCall failed
+***12-09-2025 23:20:58*** [ERROR]  (њCall failed
+***12-09-2025 23:20:58*** [ERROR]  (њCall failed
+***12-09-2025 23:20:58*** [ERROR]  (њCall failed
+***12-09-2025 23:20:58*** [ERROR]  (њCall failed
+***12-09-2025 23:20:58*** [ERROR]  (њCall failed
+***12-09-2025 23:20:58*** [ERROR]  (њCall failed
+***12-09-2025 23:20:58*** [ERROR]  (њCall failed
+***12-09-2025 23:20:58*** [ERROR]  (њCall failed
+***12-09-2025 23:20:58*** [ERROR]  (њCall failed
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % 
