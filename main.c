@@ -7,16 +7,38 @@
  * All outputs of the child process will be send to the parent and then placed in a log file
  *
 */
-
+#define _GNU_SOURCE
 #include <unistd.h>
 #include <stdio.h>
 #include <sys/wait.h>
+#include <sys/event.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
+#include <signal.h>
+#include <fcntl.h>
 
-int main(int argc, char** argv) {
-    fflush(stdout);
+int pid = -1;
+
+static void handler(int sig) {
+    kill(pid, sig);
+}
+
+int main(int argc, char **argv) {
+    struct sigaction sa;
+    sa.sa_handler = handler;
+    sa.sa_flags = 0;
+    sigemptyset(&sa.sa_mask);
+
+    sigaction(SIGINT, &sa, NULL);
+
+    struct kevent event;
+    struct kevent tevent;
+
+    int kq, fd, ret;
+
+
+
     const int numTries = 10;
     char* successfulChild[] = {"./ChildProcess", NULL}; //This call will succeed, return 0
     char* failingChild[] = {"./ChildProcess", "1", NULL}; //This call will fail, return -1
@@ -31,7 +53,7 @@ int main(int argc, char** argv) {
     }
 
     FILE* logFile = fopen("./log.txt", "w");
-
+    int waitTimeMS = 1;
     for(int i = 0; i < numTries; i++) {
         printf("Attempt %i at running process\n", i+1);
 
@@ -42,9 +64,19 @@ int main(int argc, char** argv) {
             exit(-1);
         if(pipe(pipe_fd[1]) < 0)
             exit(-1);
+        fcntl(pipe_fd[0][0], F_SETFL, O_NONBLOCK);
+        fcntl(pipe_fd[1][0], F_SETFL, O_NONBLOCK);
+
+
+        /*kq = kqueue();
+
+        EV_SET(&event, pipe_fd[0][1], EVFILT_VNODE, EV_ADD, NOTE_WRITE, 0,
+               NULL);
+        ret = kevent(kq, &event, 1, NULL, 0,	NULL);*/
+
 
         //create child process
-        int pid = fork();
+        pid = fork();
         if(pid == -1) {
             exit(-1);
         }
@@ -115,6 +147,9 @@ int main(int argc, char** argv) {
             if (status == 0) {
                 printf("Child exited successfully\n");
                 exit(0);
+            } else {
+              usleep(waitTimeMS*1000);
+              waitTimeMS *= 3;
             }
         }
     }

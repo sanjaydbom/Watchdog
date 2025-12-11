@@ -14,11 +14,11 @@
 ** Program catches all outputs from child
 ** Program places all the output in a specific log file with time stamps
 
-* TODO Phase 3: Circuit Breaker
+* DONE Phase 3: Circuit Breaker
 ** Program must detect if child is in a crash loop
 ** If child is in crash loop, restart delays should increase exponentially
 
-* TODO Phase 4: Puppet Master
+* DONE Phase 4: Puppet Master
 ** Program must respond to User signals (kill)
 ** Must properly handle memory when receiving signal
 
