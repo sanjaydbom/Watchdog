@@ -24,3 +24,5 @@
 
 * TODO Phase 5: Dynamic Configuration
 ** Takes user input from files instead of hardcoded values
+* TODO Phase 6: Create event driven poll to minimize CPU usage
+* TODO Phase 7: Make dockeresque container
