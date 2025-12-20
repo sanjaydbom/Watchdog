@@ -26,7 +26,7 @@ int main() {
            (void *)"SERVER");
     EV_SET(&events[1], STDIN_FILENO, EVFILT_READ, EV_ADD, 0, 0, (void *)"STDIN");
     kevent(kq, &events, 2, NULL, 0, NULL);
-
+    fflush(stdout);
     while (1) {
       int ret = kevent(kq, NULL, 0, &tevent, 1, NULL);
       if (ret > 0) {
@@ -34,15 +34,15 @@ int main() {
               char buffer[128];
               int num = read(STDIN_FILENO, buffer, 127);
               buffer[num] = 0;
-              write(connectionSocket, buffer, 128);
+              write(connectionSocket, buffer, num);
               EV_SET(&tevent, STDIN_FILENO, EVFILT_READ, EV_ADD, 0, 0, (void *)"STDIN");
               kevent(kq, &tevent, 1, NULL, 0, NULL);
           } else {
               char buffer[128];
               int num = read(connectionSocket, buffer, 127);
               buffer[num] = 0;
-              printf("%s\n", buffer);
-
+              printf("RESPONSE: %s\n", buffer);
+              fflush(stdout);
               if (num == 0)
                 break;
           }

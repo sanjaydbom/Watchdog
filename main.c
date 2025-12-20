@@ -209,28 +209,23 @@ int main(int argc, char **argv) {
                         EV_SET(&event, tempSocket, EVFILT_READ, EV_ADD, 0, 0, (void *)client_label);
                         kevent(kq, &event, 1, NULL, 0, NULL);
                     } else if(strcmp(tevent.udata, client_label) == 0) {
-                        //printf("CLIENT DATA RECIEVED\n");
                         char buffer[32];
                         char response[100];
-                        int num = read((int)tevent.ident, buffer, sizeof(buffer));
+                        int num = read((int)tevent.ident, buffer, sizeof(buffer)-1);
                         buffer[num] = 0;
-                        if (num == 0);
+                        if (num == 0) {
+                            close((int)tevent.ident);
+                        }
                         else if (strncmp(buffer, "GET_STATUS\n", num) == 0) {
                             sprintf(response, "RUNNING | PID %d\n", pid);
                             write((int)tevent.ident, response, sizeof(response));
                         } else if (strncmp(buffer, "RESTART\n", num) == 0) {
                             kill(pid, SIGTERM);
                             i = -1;
-                            /* close(pipe_fd[0][0]); */
-                            /* close(pipe_fd[1][0]); */
-                            /* numClosed = 2; */
                         } else if (strncmp(buffer, "STOP\n", num) == 0) {
                             idle = 1;
                             kill(pid, SIGTERM);
                             i--;
-                            /* close(pipe_fd[0][0]); */
-                            /* close(pipe_fd[1][0]); */
-                            /* numClosed = 2; */
                         } else if (strncmp(buffer, "RESUME\n", num) == 0) {
                             ;
                         } else {
@@ -243,7 +238,7 @@ int main(int argc, char **argv) {
                         int source_fd = (int)tevent.ident;//which port the event came from
                         char output_buffer[2048];
                         char time_buffer[100];
-                        int numRead = read(source_fd, output_buffer, 2048);
+                        int numRead = read(source_fd, output_buffer, 2047);
 
                         if (numRead == 0) { //Close file and increment counter
                             close(source_fd);
