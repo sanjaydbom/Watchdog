@@ -7,7 +7,7 @@ int main(int argc, char** argv) {
     exit(0);
   } else {
     fprintf(stderr, "Call failed\n");
-    sleep(1);
+    sleep(10);
     exit(-1);
   }
 }

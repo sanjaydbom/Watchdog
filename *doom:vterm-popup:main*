@@ -1,0 +1,244 @@
+Restored session: Thu Dec 11 15:32:51 PST 2025
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+zsh: segmentation fault  ./main
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % 
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+zsh: segmentation fault  ./main
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+zsh: segmentation fault  ./main
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+zsh: segmentation fault  ./main
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+^C^C
+
+
+
+
+^C^C^C^C^C^C
+^C^C^C^C^C
+zsh: terminated  ./main
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % 
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+zsh: segmentation fault  ./main
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+^C
+^C
+zsh: terminated  ./main
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % 
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+zsh: segmentation fault  ./main
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+zsh: segmentation fault  ./main
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+zsh: segmentation fault  ./main
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+8
+zsh: segmentation fault  ./main
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+8
+stdout FD: 4
+stderr FD: 6
+zsh: segmentation fault  ./main
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+Kqueue: 8
+stdout FD: 4
+stderr FD: 6
+stdEvent address: 0x16daa2788
+zsh: segmentation fault  ./main
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+Kqueue: 8
+stdout FD: 4
+stderr FD: 6
+stdEvent address: 0x16ef96748
+zsh: segmentation fault  ./main
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+Kqueue: 8
+stdout FD: 4
+stderr FD: 6
+stdEvent address: 0x16cf42760
+zsh: segmentation fault  ./main
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+Kqueue: 8
+stdout FD: 4
+stderr FD: 6
+stdEvent address: 0x103365ae0
+zsh: segmentation fault  ./main
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog %  ./main
+Attempt 1 at running process
+Kqueue: 8
+stdout FD: 4
+stderr FD: 6
+stdEvent address: 0x1012c5a00
+^C
+zsh: terminated  ./main
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % 
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+Kqueue: 8
+stdout FD: 4
+stderr FD: 6
+stdEvent address: 0x16dc42748
+^CCCzsh: terminated  ./main
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+Kqueue: 8
+stdout FD: 4
+stderr FD: 6
+stdEvent address: 0x16bc12748
+ps
+zsh: terminated  ./main
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ps
+  PID TTY           TIME CMD
+83446 ttys000    0:00.10 /bin/zsh
+53221 ttys005    0:00.26 -zsh
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+Kqueue: 8
+stdout FD: 4
+stderr FD: 6
+stdEvent address: 0x16d95e748
+
+zsh: terminated  ./main
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % 
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+Kqueue: 8
+stdout FD: 4
+stderr FD: 6
+stdEvent address: 0x16b68a748
+Done with setup
+zsh: terminated  ./main
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+Kqueue: 8
+stdout FD: 4
+stderr FD: 6
+stdEvent address: 0x16f4b6748
+Done with setup
+Done with setup
+^C
+zsh: terminated  ./main
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % 
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+Kqueue: 8
+stdout FD: 4
+stderr FD: 6
+stdEvent address: 0x16b0a2748
+Done with setup
+Done with setup
+Child exited successfully
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % cat log.txt 
+***12-11-2025 16:50:47*** [INFO]   Call successful
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+Kqueue: 8
+stdout FD: 4
+stderr FD: 6
+stdEvent address: 0x16b52a748
+^Czsh: terminated  ./main
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+Child exited successfully
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % cat log.txt
+***12-11-2025 17:01:02*** [INFO]   Call successful
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main 1
+Attempt 1 at running process
+Attempt 2 at running process
+Attempt 3 at running process
+Attempt 4 at running process
+Attempt 5 at running process
+Attempt 6 at running process
+Attempt 7 at running process
+Attempt 8 at running process
+Attempt 9 at running process
+Attempt 10 at running process
+Initilzing child failed. Exiting...
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % cat log.txt
+***12-11-2025 17:01:15*** [ERROR]  Call failed
+***12-11-2025 17:01:25*** [ERROR]  Call failed
+***12-11-2025 17:01:35*** [ERROR]  Call failed
+***12-11-2025 17:01:45*** [ERROR]  Call failed
+***12-11-2025 17:01:55*** [ERROR]  Call failed
+***12-11-2025 17:02:05*** [ERROR]  Call failed
+***12-11-2025 17:02:16*** [ERROR]  Call failed
+***12-11-2025 17:02:26*** [ERROR]  Call failed
+***12-11-2025 17:02:39*** [ERROR]  Call failed
+***12-11-2025 17:02:55*** [ERROR]  Call failed
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main
+Attempt 1 at running process
+Child exited successfully
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main 1
+Attempt 1 at running process
+Attempt 2 at running process
+Attempt 3 at running process
+Attempt 4 at running process
+Attempt 5 at running process
+Attempt 6 at running process
+Attempt 7 at running process
+Attempt 8 at running process
+Attempt 9 at running process
+Attempt 10 at running process
+Initilzing child failed. Exiting...
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ./main 1
+Attempt 1 at running process
+Attempt 2 at running process
+Attempt 3 at running process
+Attempt 4 at running process
+Attempt 5 at running process
+Attempt 6 at running process
+Attempt 7 at running process
+Attempt 8 at running process
+Attempt 9 at running process
+Attempt 10 at running process
+Initilzing child failed. Exiting...
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ls
+*doom:vterm-popup:main* ChildProcess.c          main                    TODO.org
+ChildProcess            log.txt                 main.c
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % ls *doom*
+*doom:vterm-popup:main*
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % rm *doom*
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % git add .
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % git commit -m "Make reading event driven-drastically reduces CPU usage."
+[main f3345dd] Make reading event driven-drastically reduces CPU usage.
+ 7 files changed, 48 insertions(+), 1126 deletions(-)
+ delete mode 100644 *doom:vterm-popup:#1*
+ delete mode 100644 *doom:vterm-popup:main*
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % git push
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 3.03 KiB | 3.03 MiB/s, done.
+Total 7 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To https://github.com/sanjaydbom/Watchdog.git
+   98e82fc..f3345dd  main -> main
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % cat log.txt 
+***12-11-2025 17:13:11*** [ERROR]  Call failed
+***12-11-2025 17:13:21*** [ERROR]  Call failed
+***12-11-2025 17:13:31*** [ERROR]  Call failed
+***12-11-2025 17:13:41*** [ERROR]  Call failed
+***12-11-2025 17:13:51*** [ERROR]  Call failed
+***12-11-2025 17:14:01*** [ERROR]  Call failed
+***12-11-2025 17:14:11*** [ERROR]  Call failed
+***12-11-2025 17:14:23*** [ERROR]  Call failed
+***12-11-2025 17:14:39*** [ERROR]  Call failed
+***12-11-2025 17:15:09*** [ERROR]  Call failed
+sanjaydhamodharan@Sanjays-MacBook-Air Watchdog % 
