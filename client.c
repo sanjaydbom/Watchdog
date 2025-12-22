@@ -26,7 +26,6 @@ int main() {
            (void *)"SERVER");
     EV_SET(&events[1], STDIN_FILENO, EVFILT_READ, EV_ADD, 0, 0, (void *)"STDIN");
     kevent(kq, &events, 2, NULL, 0, NULL);
-    fflush(stdout);
     while (1) {
       int ret = kevent(kq, NULL, 0, &tevent, 1, NULL);
       if (ret > 0) {

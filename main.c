@@ -8,6 +8,8 @@
  *
 */
 #define _GNU_SOURCE
+#define _XOPEN_SOURCE_EXTENDED 1
+#define _XPLATFORM_SOURCE
 #include <unistd.h>
 #include <stdio.h>
 #include <sys/wait.h>
@@ -20,6 +22,7 @@
 #include <sys/socket.h>
 #include <sys/un.h>
 #include <sys/time.h>
+#include <sys/resource.h>
 #include <sys/types.h>
 #include <limits.h>
 #include <math.h>
@@ -186,6 +189,26 @@ int main(int argc, char **argv) {
             close(pipe_fd[0][1]);
             close(pipe_fd[1][1]);
 
+            //limits
+            #ifndef __APPLE__
+            struct rlimit memoryLimit;
+            if (getrlimit(RLIMIT_RSS, &memoryLimit) == -1) {
+                perror("Get limit failure");
+                int err = errno;
+                printf("%i\n", err);
+                exit(-1);
+
+            }
+            printf("Current soft limit: %llu, hard limit: %llu\n",
+                   (unsigned long long)memoryLimit.rlim_cur, (unsigned long long)memoryLimit.rlim_max);
+            memoryLimit.rlim_cur = 1024*1024*1024; // 50 MB
+            if (setrlimit(RLIMIT_RSS, &memoryLimit) == -1) {
+              perror("Set limit failure");
+              int err = errno;
+              printf("%i\n", err);
+              exit(-1);
+            }
+            #endif
             //run the argument
             execv(args[0], args);
             perror("execv");
