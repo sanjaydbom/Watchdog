@@ -25,7 +25,7 @@
 * HOLD Phase 5: Dynamic Configuration
 ** Takes user input from files instead of hardcoded values
 * DONE Phase 6: Create event driven poll to minimize CPU usage
-* TODO Phase 7: Enforce limits on the child
+* DONE Phase 7: Enforce limits on the child
 ** Use setrlimit to set memory limits for the child
 ** Maybe set CPU usage limits as well
 ** Kill child if it uses more memory than allocated.
