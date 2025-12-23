@@ -1,1 +1,10 @@
-***12-21 [INFO]   Succesfully allocated
+***12-22 [INFO]   Current soft limit: 9223372036854775807, hard limit: 9223372036854775807
+***12-22 [INFO]   Current soft limit: 9223372036854775807, hard limit: 9223372036854775807
+***12-22 [INFO]   Current soft limit: 9223372036854775807, hard limit: 9223372036854775807
+***12-22 [INFO]   Current soft limit: 9223372036854775807, hard limit: 9223372036854775807
+***12-22 [INFO]   Current soft limit: 9223372036854775807, hard limit: 9223372036854775807
+***12-22 [INFO]   Current soft limit: 9223372036854775807, hard limit: 9223372036854775807
+***12-22 [INFO]   Current soft limit: 9223372036854775807, hard limit: 9223372036854775807
+***12-22 [INFO]   Current soft limit: 9223372036854775807, hard limit: 9223372036854775807
+***12-22 [INFO]   Current soft limit: 9223372036854775807, hard limit: 9223372036854775807
+***12-22 [INFO]   Current soft limit: 9223372036854775807, hard limit: 9223372036854775807

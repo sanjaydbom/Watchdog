@@ -6,9 +6,7 @@ int main(int argc, char** argv) {
     printf("Call successful\n");
     exit(0);
   } else {
-    void *pointer = malloc(5000000001);
-    printf("Succesfully allocated\n");
-    free(pointer);
-    exit(0);
+      while(1);
+      exit(0);
   }
 }

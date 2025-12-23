@@ -55,7 +55,7 @@ void CreateSignalHandling();
 //gets the current time formated to be used for the log file
 void getTime(char *time_buffer);
 //Sets memory limit in megabytes for the child process, but doesn't work on apple
-void setMemoryLimit(int limitMB);
+void setLimit(int resource, int limitMB);
 //reads data from child process
 void readChildData(struct kevent tevent, FILE *logFile, int *numClosed);
 
@@ -156,7 +156,7 @@ int main(int argc, char **argv) {
             close(pipe_fd[1][1]);
 
             //limits
-            setMemoryLimit(50 * 1024 * 1024);
+            setLimit(RLIMIT_CPU, 1);
 
             //run the argument
             execv(args[0], args);
@@ -291,11 +291,10 @@ void getTime(char* time_buffer) {
     strftime(time_buffer, sizeof(time_buffer), "***%m-%d-%Y %H:%M:%S***", local_time);
 }
 
-void setMemoryLimit(int limit) {
+void setLimit(int resource, int limit) {
     //limits
-    #ifndef __APPLE__
     struct rlimit memoryLimit;
-    if (getrlimit(RLIMIT_RSS, &memoryLimit) == -1) {
+    if (getrlimit(resource, &memoryLimit) == -1) {
         perror("Get limit failure");
         int err = errno;
         printf("%i\n", err);
@@ -304,14 +303,12 @@ void setMemoryLimit(int limit) {
     printf("Current soft limit: %llu, hard limit: %llu\n",
             (unsigned long long)memoryLimit.rlim_cur, (unsigned long long)memoryLimit.rlim_max);
     memoryLimit.rlim_cur = limit;
-    if (setrlimit(RLIMIT_RSS, &memoryLimit) == -1) {
+    if (setrlimit(resource, &memoryLimit) == -1) {
         perror("Set limit failure");
         int err = errno;
         printf("%i\n", err);
         exit(-1);
     }
-    #endif
-
 }
 
 void readChildData(struct kevent tevent, FILE *logFile, int* numClosed) {
